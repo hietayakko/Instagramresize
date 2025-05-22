@@ -3,7 +3,6 @@ import dynamic from "next/dynamic"
 
 // ImageResizerコンポーネントを動的にインポート
 const ImageResizer = dynamic(() => import("@/components/image-resizer"), {
-  ssr: false,
   loading: () => <p className="text-center py-10">読み込み中...</p>,
 })
 
